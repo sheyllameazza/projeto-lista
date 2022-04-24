@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AG Games</title>
+        <link rel="stylesheet" href="cadastro.css">
+    </head>
+     <body>
+        <div id="main-conteiner">
+            <h1>Cadastre-se</h1>
+            <form id="cadastro">
+               <div class="nome spacing">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu Nome">
+                    </div>
+                    <div class="sobrenome">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome">
+                    </div>
+                    <div class="telefone">
+                        <label for="text">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                    </div>
+                    <div class="botao">
+                        <input type="submit" id="btn-submit" value="Registrar">
+                    </div> 
+                </form>
+            </div>
+            <style>
+                input, label{
+                    display: block;
+                    width: 100%;
+                }
+                input:focus label:focus{
+                outline: none;
+                }
+                body{
+                    padding-top: 5vh;
+                    background-color:#0d0d0d;
+                    background-size: cover;
+                    background-position-y: -150px;
+                }
+                #main-conteiner {
+                    width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: #FFF;
+                    border-radius: 10px;
+                    padding: 25px;
+                }
+                #main-conteiner h1{
+                    text-align: center;
+                    margin-bottom: 25px;
+                    font-size: 1.6rem;
+                }
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                .email{
+                    flex: 1 1 100%;
+                    position: relative;
+                }
+                .nome{
+                    flex: 1 1 45%;
+                    position: relative;
+                }
+                .spacing{
+                    margin-right: 2.5%;
+                }
+                label {
+                    font-weight: bold;
+                    font-size: .8rem;
+                }
+                input{
+                    border-bottom: 2px solid #323232;
+                    padding: 10px;
+                    font-size: .9rem;
+                    margin-bottom: 40px;
+                }
+                input[type="submit"]{
+                    background-color: #d95032;
+                    color: #FFF;
+                    border: none;
+                    border-radius: 20px;
+                    height: 40px;
+                    cursor: pointer;
+                    width: 300%;
+                }
+            </style>
+    </body>
+</html>

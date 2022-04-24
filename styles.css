@@ -1,0 +1,27 @@
+li{
+
+    display: inline-block;
+    margin: 20px;
+    background-color: blue
+}
+
+section{
+    height: 300px;
+}
+
+header{
+
+    position:fixed;
+   min-height: 70px;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+
+   
+}
+main{
+
+    margin-top: 50px;
+
+}
